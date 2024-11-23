@@ -52,3 +52,33 @@ if (isset($_POST['search'])) {
 $stmt->execute();
 $activities = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a> | 
+            <a href="user_dashboard.php">My Dashboard</a> | 
+            <a href="logout.php">Logout</a>
+        </nav>
+    </header>
+
+<main>
+    <h1>Welcome to Your Dashboard</h1>
+
+    <form method="POST" action="user_dashboard.php">
+        <input type="text" name="search_title" placeholder="Search by activity title"  value="<?php echo htmlspecialchars($search_title); ?>">
+        <button type="submit" name="search">Search</button>
+    </form>
+
+    <hr>
+
+    
+</main>
