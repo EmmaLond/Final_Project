@@ -80,5 +80,13 @@ $activities = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
     <hr>
 
-    
+    <h2>Add New Activity</h2>
+    <form method="POST" action="user_dashboard.php">
+        <input type="text" name="title" placeholder="Activity Title" required><br>
+        <input type="number" step="0.1" name="mileage" placeholder="Mileage (mi)" required><br>
+        <input type="time" name="time" placeholder="Time" required><br>
+        <textarea name="notes" placeholder="Notes" ></textarea><br>
+        <button type="submit" name="add_activity">Add Activity</button>
+</form>
+
 </main>
