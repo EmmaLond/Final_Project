@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Register - Find Motivational Quotes</title>
+    <title>Register - InStride</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
