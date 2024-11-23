@@ -103,6 +103,21 @@ $activities = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         <th>Notes</th>
                     </tr>
                 </thead>
+                <tbody>
+                    <?php foreach ($activities as $activity): ?>
+                        <tr>
+                            <td><?php echo htmlspecialchars($activity['title']); ?></td>
+                            <td><?php echo htmlspecialchars($activity['date']); ?></td>
+                            <td><?php echo htmlspecialchars($activity['mileage']); ?> km</td>
+                            <td><?php echo htmlspecialchars($activity['time']); ?></td>
+                            <td><?php echo htmlspecialchars($activity['notes']); ?></td>
+                        </tr>
+                    <?php endforeach; ?>
+                </tbody>
+            </table>
+        <?php else: ?>
+            <p>No activities found.</p>
+        <?php endif; ?>
 
 </main>
 </body>
