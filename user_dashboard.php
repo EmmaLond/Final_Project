@@ -66,7 +66,7 @@ $activities = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <nav>
             <a href="index.html">Home</a> | 
             <a href="user_dashboard.php">My Dashboard</a> | 
-            <a href="logout.php">Logout</a>
+            <a href="login.php">Logout</a>
         </nav>
     </header>
 
