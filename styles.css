@@ -31,3 +31,19 @@ header{
     font-weight: 400;
   }
 
+.user{
+    margin: 50px 0;
+}
+
+.user table {
+    width: 100%;
+}
+
+.content {
+    margin: 50px, 0;
+}
+
+.content table{
+    width: 100%;
+    border-collapse: collapse;
+}
