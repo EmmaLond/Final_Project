@@ -36,3 +36,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['add_activity'])) {
     }
 }
 
+// Handle search functionality
+$search_title = '';
+if (isset($_POST['search'])) {
+    $search_title = $_POST['search_title'];
+    $sql = "SELECT * FROM stats WHERE user_id = :user_id AND title LIKE :title ORDER BY date DESC";
+    $stmt = $pdo->prepare($sql);
+    $stmt->bindValue(':user_id', $_SESSION['user_id'], PDO::PARAM_INT);
+    $stmt->bindValue(':title', "%" . $search_title . "%", PDO::PARAM_STR);
+} else {
+    $sql = "SELECT * FROM stats WHERE user_id = :user_id ORDER BY date DESC";
+    $stmt = $pdo->prepare($sql);
+    $stmt->bindValue(':user_id', $_SESSION['user_id'], PDO::PARAM_INT);
+}
+$stmt->execute();
+$activities = $stmt->fetchAll(PDO::FETCH_ASSOC);
+?>
