@@ -89,4 +89,21 @@ $activities = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <button type="submit" name="add_activity">Add Activity</button>
 </form>
 
+<hr>
+
+<h2>Past Activities</h2>
+<?php if (count($activities) > 0): ?>
+    <table>
+        <thead>
+            <tr>
+                        <th>Title</th>
+                        <th>Date</th>
+                        <th>Mileage</th>
+                        <th>Time</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+
 </main>
+</body>
+</html>
