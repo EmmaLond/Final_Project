@@ -18,7 +18,7 @@ header nav {
 }
 
 header nav a {
-    color: white;
+  color: white;
   text-decoration: none;
   margin: 0 15px;
   font-weight: bold;
@@ -33,6 +33,7 @@ header nav a:hover {
     background-color: #007bff;
     color: white;
     padding: 80px 0;
+    text-align: center;
   }
   
 .hero h1 {
@@ -47,9 +48,10 @@ header nav a:hover {
   }
 
 .section-content{
-    max-width: 1100px;
-    margin: 0 auto;
+    text-align: center;
+    margin: 20px auto;
     padding: 20px;
+    max-width: 800px;
 }
 
 h2 {
@@ -64,16 +66,18 @@ p {
     margin-bottom: 30px;
 }
 
- table {
+table {
     width: 100%;
-  margin: 20px 0;
-  border-collapse: collapse;
-  text-align: left;
+    margin: 20px 0;
+    border-collapse: collapse;
+    text-align: center;
 }
 
-th, td {
-  padding: 12px;
+td {
+  padding: 20px;
   border: 1px solid #ddd;
+  text-align:left;
+  vertical-align: top;
 }
 
 th {

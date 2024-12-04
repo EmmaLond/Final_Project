@@ -44,31 +44,31 @@ if (!isset($_SESSION['user_id'])) {
             <div class="section-content">
                 <h2>View My Profile</h2>
                 <a href="user_dashboard.php" class="cta-btn">View Profile</a>
-        </div>
+            </div>
         </section>
 
         <section class="content">
             <div class="section-content">
-            <h2>Explore Our Content</h2>
-            <table>
-                <tr>
-                    <td>
-                        <h3>Find your Own Workout Plan</h3>
-                        <p>Find your fitness routines that prioritize your well-being without comparison.</p>
-                        <a href="https://www.muscleandstrength.com/workout-routines">Read More</a>
-                    </td>
-                    <td>
-                        <h3>Mindful Running</h3>
-                        <p>Explore the benefits of running with mindfulness and self-awareness.</p>
-                        <a href="https://mindfulness.com/mindful-living/mindful-running">Read More</a>
-                    </td>
-                    <td>
-                        <h3>Nutrition Tips for Beginners</h3>
-                        <p>Basic nutrition advice to complement your fitness journey.</p>
-                        <a href="https://www.healthline.com/nutrition/27-health-and-nutrition-tips">Read More</a>
-                    </td>
-                </tr>
-            </table>
+                <h2>Explore Our Content</h2>
+                <table>
+                    <tr>
+                        <td>
+                            <h3>Find your Own Workout Plan</h3>
+                            <p>Find your fitness routines that prioritize your well-being without comparison.</p>
+                            <a href="https://www.muscleandstrength.com/workout-routines">Read More</a>
+                        </td>
+                        <td>
+                            <h3>Mindful Running</h3>
+                            <p>Explore the benefits of running with mindfulness and self-awareness.</p>
+                            <a href="https://mindfulness.com/mindful-living/mindful-running">Read More</a>
+                        </td>
+                        <td>
+                            <h3>Nutrition Tips for Beginners</h3>
+                            <p>Basic nutrition advice to complement your fitness journey.</p>
+                            <a href="https://www.healthline.com/nutrition/27-health-and-nutrition-tips">Read More</a>
+                        </td>
+                    </tr>
+                </table>
             </div>
         </section>
 
