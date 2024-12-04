@@ -52,24 +52,22 @@ if (!isset($_SESSION['user_id'])) {
             <h2>Explore Our Content</h2>
             <table>
                 <tr>
-                    <th>Article Title</th>
-                    <th>Description</th>
-                    <th>Link</th>
+                    <td>
+                        <h3>How to Stay Fit Without Pressure</h3>
+                        <p>Learn about fitness routines that prioritize your well-being without comparison.</p>
+                        <a href="#">Read More</a>
+                    </td>
+                    <td>
+                        <h3>Mindful Running</h3>
+                        <p>Explore the benefits of running with mindfulness and self-awareness.</p>
+                        <a href="#">Read More</a>
+                    </td>
+                    <td>
+                        <h3>Nutrition Tips for Beginners</h3>
+                        <p>Basic nutrition advice to complement your fitness journey.</p>
+                        <a href="#">Read More</a>
+                    </td>
                 </tr>
-                <td>How to Stay Fit Without Pressure</td>
-                <td>Learn about fitness routines that prioritize your well-being without comparison.</td>
-                <td><a href="#">Read More</a></td>
-            </tr>
-            <tr>
-                <td>Mindful Running</td>
-                <td>Explore the benefits of running with mindfulness and self-awareness.</td>
-                <td><a href="#">Read More</a></td>
-            </tr>
-            <tr>
-                <td>Nutrition Tips for Beginners</td>
-                <td>Basic nutrition advice to complement your fitness journey.</td>
-                <td><a href="#">Read More</a></td>
-            </tr>
             </table>
             </div>
         </section>
