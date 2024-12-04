@@ -1,12 +1,12 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa;
+    background-color: #f1f9fa;
     color: #333;
     line-height: 1.6;
     padding: 20px;
     text-align: center;
 }
-
+ /*Header*/
 header{
     background-color: #007bff;
     color: white;
@@ -28,7 +28,7 @@ header nav a {
 header nav a:hover {
     text-decoration: underline;
 }
-
+/*Hero*/
 .hero {
     background-color: #007bff;
     color: white;
@@ -47,12 +47,16 @@ header nav a:hover {
     margin-top: 10px
   }
 
+  /*Section */
 .section-content{
     text-align: center;
     margin: 20px auto;
     padding: 20px;
     max-width: 800px;
 }
+/*Buttons*/
+
+
 
 h2 {
     font-size: 32px;
@@ -66,34 +70,7 @@ p {
     margin-bottom: 30px;
 }
 
-table {
-    width: 100%;
-    margin: 20px 0;
-    border-collapse: collapse;
-    text-align: center;
-}
-
-td {
-  padding: 20px;
-  border: 1px solid #ddd;
-  text-align:left;
-  vertical-align: top;
-}
-
-th {
-  background-color: #007bff;
-  color: white;
-}
-
-td {
-  background-color: #f8f9fa;
-}
-
-table a {
-  color: #007bff;
-  text-decoration: none;
-}
-
+/*Content Section*/
 
 .content {
     margin: 50px, 0;
@@ -104,13 +81,24 @@ table a {
     border-collapse: collapse;
 }
 
-.content table th,td {
+.content table td {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 15px;
   }
   
+.content table h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.content table p {
+    font-size: 0.9em;
+    color: #555;
+    text-align: center;
+}
   .content table a {
     margin-top: 10px;
     text-decoration: none;
