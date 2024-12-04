@@ -53,19 +53,19 @@ if (!isset($_SESSION['user_id'])) {
             <table>
                 <tr>
                     <td>
-                        <h3>How to Stay Fit Without Pressure</h3>
-                        <p>Learn about fitness routines that prioritize your well-being without comparison.</p>
-                        <a href="#">Read More</a>
+                        <h3>Find your Own Workout Plan</h3>
+                        <p>Find your fitness routines that prioritize your well-being without comparison.</p>
+                        <a href="https://www.muscleandstrength.com/workout-routines">Read More</a>
                     </td>
                     <td>
                         <h3>Mindful Running</h3>
                         <p>Explore the benefits of running with mindfulness and self-awareness.</p>
-                        <a href="#">Read More</a>
+                        <a href="https://mindfulness.com/mindful-living/mindful-running">Read More</a>
                     </td>
                     <td>
                         <h3>Nutrition Tips for Beginners</h3>
                         <p>Basic nutrition advice to complement your fitness journey.</p>
-                        <a href="#">Read More</a>
+                        <a href="https://www.healthline.com/nutrition/27-health-and-nutrition-tips">Read More</a>
                     </td>
                 </tr>
             </table>
