@@ -79,9 +79,22 @@ p {
 .content table{
     width: 100%;
     border-collapse: collapse;
+    display: flex;
+    justify-content: space-between; /* Adds space between the columns */
+    gap: 20px; /* Controls spacing between the widgets */
+    margin-top: 20px;
+}
+
+.content table tr {
+  color:#666;
+  display: flex;
+  width: 100%;
+  justify-content: space-between; /* Ensures equal spacing between the cells */
 }
 
 .content table td {
+    flex: 1;
+    color:#666;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -92,6 +105,7 @@ p {
     font-size: 1.2em;
     color: #333;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .content table p {
