@@ -100,14 +100,18 @@ table a {
     border-collapse: collapse;
 }
 
-.content table th {
-    background-color: #007bff;
-    color: white;
+.content table th,td {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
   }
   
   .content table a {
-    color: #007bff;
-    font-weight: bold;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007BFF;
+
   }
   
   /* Footer Section */
