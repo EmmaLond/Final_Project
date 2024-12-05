@@ -1,19 +1,19 @@
 /* General Styles */
 body {
-    background-color: #FFFFFF; /* White background for cleanliness */
-    color: #2C2C2C; /* Deep Charcoal text for easy readability */
+    background-color: #F6F6F6; /* Light Grey for the overall background */
+    color: #2C2C2C; /* Dark Charcoal for text, ensuring readability */
     font-family: Arial, sans-serif;
 }
 
 header {
-    background-color: #2C2C2C; /* Deep Charcoal for the header */
-    color: #FFFFFF; /* White text */
-    padding: 10px 20px;
+    background-color: #2C2C2C; /* Dark Charcoal header */
+    color: #FFFFFF; /* White text for the header */
+    padding: 15px 20px;
     text-align: center;
 }
 
 header nav a {
-    color: #FFFFFF; /* White */
+    color: #FFFFFF; /* White links */
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
@@ -51,7 +51,7 @@ main {
 
 /* About Section */
 .about {
-    background-color: #F9E0A6; /* Warm Beige for a welcoming tone */
+    background-color: #FFFFFF; /* White background to maintain lightness */
     padding: 40px;
     margin: 20px 0;
     border-radius: 10px;
@@ -71,7 +71,7 @@ main {
 
 .about .cta-btn {
     display: inline-block;
-    background-color: #FF6F32; /* Vibrant Orange for CTA */
+    background-color: #FF6F32; /* Bright Orange for call-to-action */
     color: white;
     padding: 12px 25px;
     border-radius: 5px;
@@ -81,12 +81,12 @@ main {
 }
 
 .about .cta-btn:hover {
-    background-color: #E55B29; /* Slightly darker orange */
+    background-color: #E55B29; /* Darker Orange on hover */
 }
 
 /* User Section */
 .user {
-    background-color: #AED8E6; /* Muted Light Blue to calm the energy */
+    background-color: #F6F6F6; /* Light Grey to maintain neutrality */
     padding: 40px;
     margin: 20px 0;
     border-radius: 10px;
@@ -101,7 +101,7 @@ main {
 
 .user .cta-btn {
     display: inline-block;
-    background-color: #3399FF; /* Rich Sky Blue for the button */
+    background-color: #3399FF; /* Vibrant Blue for the button */
     color: white;
     padding: 12px 25px;
     border-radius: 5px;
@@ -116,12 +116,11 @@ main {
 
 /* Content Section */
 .content {
-    background-color: #2C2C2C; /* Deep Charcoal background */
+    background-color: #FFFFFF; /* White background for content section */
     padding: 40px;
     margin: 20px 0;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    color: white;
 }
 
 .content .section-content h2 {
@@ -137,11 +136,11 @@ main {
 }
 
 .content table td {
-    background-color: #FFFFFF; /* White background for contrast */
+    background-color: #FFFFFF; /* White background for table cells */
     padding: 25px;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    color: #2C2C2C; /* Dark charcoal text */
+    color: #2C2C2C; /* Dark Charcoal text */
     text-align: center;
     vertical-align: top;
 }
@@ -159,27 +158,27 @@ main {
 }
 
 .content table a {
-    color: #3399FF; /* Rich Sky Blue for links */
+    color: #3399FF; /* Vibrant Blue for links */
     font-weight: bold;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .content table a:hover {
-    color: #2578B8; /* Darker blue for hover effect */
+    color: #2578B8; /* Darker blue on hover */
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #2C2C2C; /* Deep Charcoal for footer */
+    background-color: #2C2C2C; /* Dark Charcoal for footer */
     color: white;
     font-size: 0.9rem;
 }
 
 footer a {
-    color: #FF6F32; /* Vibrant Orange for footer links */
+    color: #FF6F32; /* Bright Orange for footer links */
     text-decoration: none;
 }
 
