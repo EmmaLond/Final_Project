@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    background-color: #F6F6F6; /* Light Grey for the overall background */
+    background-color: #181818; /* Light Grey for the overall background */
     color: #2C2C2C; /* Dark Charcoal for text, ensuring readability */
     font-family: Arial, sans-serif;
 }
@@ -31,7 +31,7 @@ main {
 .hero {
     text-align: center;
     padding: 60px 20px;
-    background-image: url('background2.jpeg'); /* Hero Image */
+    background-image: url('background.jpg'); /* Hero Image */
     background-size: cover;
     background-position: center;
     color: white;
@@ -51,7 +51,7 @@ main {
 
 /* About Section */
 .about {
-    background-color: #FFFFFF; /* White background to maintain lightness */
+    background-color: #ffe9df; /* White background to maintain lightness */
     padding: 40px;
     margin: 20px 0;
     border-radius: 10px;
@@ -86,7 +86,8 @@ main {
 
 /* User Section */
 .user {
-    background-color: #F6F6F6; /* Light Grey to maintain neutrality */
+    background-color: #FF6F32; /* Light Grey to maintain neutrality */
+    color: #ffffff;
     padding: 40px;
     margin: 20px 0;
     border-radius: 10px;
@@ -101,7 +102,7 @@ main {
 
 .user .cta-btn {
     display: inline-block;
-    background-color: #3399FF; /* Vibrant Blue for the button */
+    background-color:#2C2C2C; /* Vibrant Blue for the button */
     color: white;
     padding: 12px 25px;
     border-radius: 5px;
@@ -111,7 +112,7 @@ main {
 }
 
 .user .cta-btn:hover {
-    background-color: #2578B8; /* Darker blue for hover */
+    background-color: #0d0d0e; /* Darker blue for hover */
 }
 
 /* Content Section */
