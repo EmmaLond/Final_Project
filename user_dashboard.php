@@ -42,6 +42,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['add_activity'])) {
     }
 }
 
+// Fetch recent activity stats for the current week
+$user_id = $_SESSION['user_id'];
+$start_of_week = date('Y-m-d', strtotime('monday this week'));
+$end_of_week = date('Y-m-d', strtotime('sunday this week'));
+
+$sql = "SELECT COUNT(*) AS activity_count, 
+               SUM(mileage) AS total_mileage, 
+               SUM(time) AS total_time 
+        FROM stats 
+        WHERE user_id = :user_id AND date BETWEEN :start_date AND :end_date";
+$stmt = $pdo->prepare($sql);
+$stmt->bindParam(':user_id', $user_id, PDO::PARAM_INT);
+$stmt->bindParam(':start_date', $start_of_week, PDO::PARAM_STR);
+$stmt->bindParam(':end_date', $end_of_week, PDO::PARAM_STR);
+$stmt->execute();
+$weekly_stats = $stmt->fetch(PDO::FETCH_ASSOC);
+
 // Handle search functionality
 $search_title = '';
 if (isset($_POST['search'])) {
