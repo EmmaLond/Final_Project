@@ -51,7 +51,7 @@ main {
 
 /* About Section */
 .about {
-    background-color: #ffe9df; /* White background to maintain lightness */
+    background-color: #ebdfff; /* White background to maintain lightness */
     padding: 40px;
     margin: 20px 0;
     border-radius: 10px;
@@ -71,7 +71,7 @@ main {
 
 .about .cta-btn {
     display: inline-block;
-    background-color: #FF6F32; /* Bright Orange for call-to-action */
+    background-color: #8a1efd; /* Bright Orange for call-to-action */
     color: white;
     padding: 12px 25px;
     border-radius: 5px;
@@ -81,12 +81,12 @@ main {
 }
 
 .about .cta-btn:hover {
-    background-color: #E55B29; /* Darker Orange on hover */
+    background-color: #6c18c6; /* Darker Orange on hover */
 }
 
 /* User Section */
 .user {
-    background-color: #FF6F32; /* Light Grey to maintain neutrality */
+    background-color: #8a1efd; /* Light Grey to maintain neutrality */
     color: #ffffff;
     padding: 40px;
     margin: 20px 0;
@@ -117,7 +117,7 @@ main {
 
 /* Content Section */
 .content {
-    background-color: #ffe9df; /* White background for content section */
+    background-color: #ebdfff; /* White background for content section */
     padding: 40px;
     margin: 20px 0;
     border-radius: 10px;
@@ -159,7 +159,7 @@ main {
 }
 
 .content table a {
-    color: #3399FF; /* Vibrant Blue for links */
+    color: #5f33ff; /* Vibrant Blue for links */
     font-weight: bold;
     text-decoration: none;
     transition: color 0.3s;
@@ -179,7 +179,7 @@ footer {
 }
 
 footer a {
-    color: #FF6F32; /* Bright Orange for footer links */
+    color: #8a1efd; /* Bright Orange for footer links */
     text-decoration: none;
 }
 
