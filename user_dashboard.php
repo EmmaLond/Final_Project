@@ -90,7 +90,16 @@ $activities = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <form method="POST" action="user_dashboard.php">
         <input type="text" name="title" placeholder="Activity Title" required><br>
         <input type="number" step="0.1" name="mileage" placeholder="Mileage (mi)" required><br>
-        <input type="time" name="time" placeholder="Time" required><br>
+
+        <!-- Time input fields for hours, minutes, and seconds -->
+        <label for="hours">Hours:</label>
+        <input type="number" name="hours" min="0" max="24" placeholder="Hours" required><br>
+
+        <label for="minutes">Minutes:</label>
+        <input type="number" name="minutes" min="0" max="59" placeholder="Minutes" required><br>
+        <label for="seconds">Seconds:</label>
+        <input type="number" name="seconds" min="0" max="59" placeholder="Seconds" required><br>
+
         <textarea name="notes" placeholder="Notes" ></textarea><br>
         <button type="submit" name="add_activity">Add Activity</button>
 </form>
@@ -115,7 +124,14 @@ $activities = $stmt->fetchAll(PDO::FETCH_ASSOC);
                             <td><?php echo htmlspecialchars($activity['title']); ?></td>
                             <td><?php echo htmlspecialchars($activity['date']); ?></td>
                             <td><?php echo htmlspecialchars($activity['mileage']); ?> km</td>
-                            <td><?php echo htmlspecialchars($activity['time']); ?></td>
+                            <td>
+                                <?php 
+                                    $hours = floor($activity['time'] / 3600);
+                                    $minutes = floor(($activity['time'] % 3600) / 60);
+                                    $seconds = $activity['time'] % 60;
+                                    echo "{$hours}h {$minutes}m {$seconds}s";
+                                ?>
+                            </td>
                             <td><?php echo htmlspecialchars($activity['notes']); ?></td>
                         </tr>
                     <?php endforeach; ?>
