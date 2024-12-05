@@ -14,19 +14,24 @@ if (!isset($_SESSION['user_id'])) {
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['add_activity'])) {
     $title = $_POST['title'];
     $mileage = $_POST['mileage'];
-    $time = $_POST['time'];
+    $hours = $_POST['hours'];  // Added for hours input
+    $minutes = $_POST['minutes'];  // Added for minutes input
+    $seconds = $_POST['seconds'];
     $notes = $_POST['notes'];
     $user_id = $_SESSION['user_id']; // Get the user ID from the session
+
+    // Convert the time to total seconds
+    $time = ($hours * 3600) + ($minutes * 60) + $seconds;
 
     // Insert activity into the stats table
     $sql = "INSERT INTO stats (user_id, title, mileage, time, notes, date) 
             VALUES (:user_id, :title, :mileage, :time, :notes, NOW())";
-    
+
     if ($stmt = $pdo->prepare($sql)) {
         $stmt->bindParam(':user_id', $user_id, PDO::PARAM_INT);
         $stmt->bindParam(':title', $title, PDO::PARAM_STR);
         $stmt->bindParam(':mileage', $mileage, PDO::PARAM_STR);
-        $stmt->bindParam(':time', $time, PDO::PARAM_STR);
+        $stmt->bindParam(':time', $time, PDO::PARAM_INT);
         $stmt->bindParam(':notes', $notes, PDO::PARAM_STR);
 
         if ($stmt->execute()) {
