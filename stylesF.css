@@ -1,10 +1,8 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #FFFFFF; /* White background */
+    color: #333333; /* Dark Charcoal text */
+    
 }
 
 header {
@@ -50,7 +48,7 @@ main {
 
 /* About Section */
 .about {
-    background-color: #444546;
+    background-color: #bcbcbc;
     padding: 30px;
     margin: 20px 0;
     border-radius: 10px;
@@ -70,7 +68,7 @@ main {
 
 .about .cta-btn {
     display: inline-block;
-    background-color: #007BFF;
+    background-color: #8091de;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -80,12 +78,12 @@ main {
 }
 
 .about .cta-btn:hover {
-    background-color: #0056b3;
+    background-color: #7888cf;
 }
 
 /* User Section */
 .user {
-    background-color: #444546;
+    background-color: #8091de;
     padding: 30px;
     margin: 20px 0;
     border-radius: 10px;
