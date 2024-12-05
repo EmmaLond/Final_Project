@@ -42,6 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['add_activity'])) {
     }
 }
 
+
 // Fetch recent activity stats for the current week
 $user_id = $_SESSION['user_id'];
 $start_of_week = date('Y-m-d', strtotime('monday this week'));
@@ -58,6 +59,7 @@ $stmt->bindParam(':start_date', $start_of_week, PDO::PARAM_STR);
 $stmt->bindParam(':end_date', $end_of_week, PDO::PARAM_STR);
 $stmt->execute();
 $weekly_stats = $stmt->fetch(PDO::FETCH_ASSOC);
+
 
 // Handle search functionality
 $search_title = '';
@@ -95,6 +97,15 @@ $activities = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 <main>
     <h1>Welcome to Your Dashboard</h1>
+
+    <section id= "recent-activity">
+        <h2>This Week's Stats</h2>
+    </section>
+
+
+
+
+
 
     <form method="POST" action="user_dashboard.php">
         <input type="text" name="search_title" placeholder="Search by activity title"  value="<?php echo htmlspecialchars($search_title); ?>">
