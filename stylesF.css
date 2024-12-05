@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: #444546;
+    background-color: #333333;
     color: #fff;
     padding: 10px 20px;
     text-align: center;
@@ -30,7 +30,7 @@ main {
 .hero {
     text-align: center;
     padding: 50px 20px;
-    background-color: #444546;
+    background-image: url('background2.jpeg');
     color: white;
     
 }
@@ -48,7 +48,7 @@ main {
 
 /* About Section */
 .about {
-    background-color: #bcbcbc;
+    background-color: #E5D1B4;;
     padding: 30px;
     margin: 20px 0;
     border-radius: 10px;
@@ -83,7 +83,7 @@ main {
 
 /* User Section */
 .user {
-    background-color: #8091de;
+    background-color: #4A90E2;
     padding: 30px;
     margin: 20px 0;
     border-radius: 10px;
@@ -108,12 +108,12 @@ main {
 }
 
 .user .cta-btn:hover {
-    background-color: #ff982a;
+    background-color: #0056b3;;
 }
 
 /* Content Section */
 .content {
-    background-color: #444546;
+    background-color: #333333;
     padding: 30px;
     margin: 20px 0;
     border-radius: 10px;
@@ -133,7 +133,7 @@ main {
 }
 
 .content table td {
-    background-color: #f9f9f9;
+    background-color: #F1F1F1;;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -144,6 +144,7 @@ main {
 .content table h3 {
     font-size: 1.2rem;
     margin-bottom: 10px;
+    color: #333333
 }
 
 .content table p {
@@ -167,7 +168,7 @@ main {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #444546;
+    background-color: #333333;
     color: white;
     font-size: 0.9rem;
 }
