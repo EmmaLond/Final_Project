@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: #007BFF;
+    background-color: #444546;
     color: #fff;
     padding: 10px 20px;
     text-align: center;
@@ -32,8 +32,9 @@ main {
 .hero {
     text-align: center;
     padding: 50px 20px;
-    background-color: #007BFF;
+    background-color: #444546;
     color: white;
+    
 }
 
 .hero h1 {
@@ -49,7 +50,7 @@ main {
 
 /* About Section */
 .about {
-    background-color: #fff;
+    background-color: #444546;
     padding: 30px;
     margin: 20px 0;
     border-radius: 10px;
@@ -84,7 +85,7 @@ main {
 
 /* User Section */
 .user {
-    background-color: #fff;
+    background-color: #444546;
     padding: 30px;
     margin: 20px 0;
     border-radius: 10px;
@@ -109,12 +110,12 @@ main {
 }
 
 .user .cta-btn:hover {
-    background-color: #0056b3;
+    background-color: #ff982a;
 }
 
 /* Content Section */
 .content {
-    background-color: #fff;
+    background-color: #444546;
     padding: 30px;
     margin: 20px 0;
     border-radius: 10px;
@@ -168,7 +169,7 @@ main {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #007BFF;
+    background-color: #444546;
     color: white;
     font-size: 0.9rem;
 }
