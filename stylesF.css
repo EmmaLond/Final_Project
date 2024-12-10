@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    background-color: #181818; /* Light Grey for the overall background */
+    background-color: #ebdfff; /* Light Grey for the overall background */
     color: #2C2C2C; /* Dark Charcoal for text, ensuring readability */
     font-family: Arial, sans-serif;
 }
@@ -55,6 +55,7 @@ main {
     padding: 40px;
     margin: 20px 0;
     border-radius: 10px;
+    border: 2px solid #8a1efd;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
