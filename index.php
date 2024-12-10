@@ -20,7 +20,7 @@ if (!isset($_SESSION['user_id'])) {
     <header>
         <nav>
             <a href="index.html">Home</a> | 
-            <a href="user_dashboard.php">My Dashboard</a> | 
+            <a href="login.php">My Dashboard</a> | 
             <a href="about.html">About</a>
         </nav>
     </header>
@@ -43,7 +43,7 @@ if (!isset($_SESSION['user_id'])) {
         <section class="user">
             <div class="section-content">
                 <h2>View My Profile</h2>
-                <a href="user_dashboard.php" class="cta-btn">View Profile</a>
+                <a href="login.php" class="cta-btn">View Profile</a>
             </div>
         </section>
 
