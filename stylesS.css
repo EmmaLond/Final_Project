@@ -15,16 +15,24 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-header nav a {
+header nav {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    justify-content: center; /* Center align navigation links */
+    gap: 20px; /* Add space between links */
+}
+
+header nav a {
+    color: #FFFFFF; /* White links */
+    text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
 }
 
 header nav a:hover {
-    text-decoration: underline;
+    color: #8a1efd; /* Bright Purple on hover */
+    transform: scale(1.1); /* Slight zoom effect */
 }
+
 
 main {
     padding: 20px;
