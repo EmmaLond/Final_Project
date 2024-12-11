@@ -94,8 +94,7 @@ $activities = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <a href="login.php">Logout</a>
         </nav>
     </header>
-
-<main>
+    <main class="dashboard-main">
     <h1>Welcome to Your Dashboard</h1>
 
     <section id= "recent-activity" class="stats-section">
