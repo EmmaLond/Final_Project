@@ -24,9 +24,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['add_activity'])) {
     // Convert the time to total seconds
     $time = ($hours * 3600) + ($minutes * 60) + $seconds;
 
+    // Pace = total time in minutes / mileage
+    $pace = ($time / 60) / $mileage;
+
     // Insert activity into the stats table
-    $sql = "INSERT INTO stats (user_id, title, mileage, time, notes, date) 
-            VALUES (:user_id, :title, :mileage, :time, :notes, :activity_date)";
+    $sql = "INSERT INTO stats (user_id, title, mileage, time, notes, date, pace) 
+            VALUES (:user_id, :title, :mileage, :time, :notes, :activity_date, :pace)";
 
     if ($stmt = $pdo->prepare($sql)) {
         $stmt->bindParam(':user_id', $user_id, PDO::PARAM_INT);
@@ -35,6 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['add_activity'])) {
         $stmt->bindParam(':time', $time, PDO::PARAM_INT);
         $stmt->bindParam(':notes', $notes, PDO::PARAM_STR);
         $stmt->bindParam(':activity_date', $activity_date, PDO::PARAM_STR);
+        $stmt->bindParam(':pace', $pace, PDO::PARAM_STR);
 
         if ($stmt->execute()) {
             echo "Activity added successfully!";
@@ -172,6 +176,7 @@ $activities = $stmt->fetchAll(PDO::FETCH_ASSOC);
                             <td><?php echo htmlspecialchars($activity['title']); ?></td>
                             <td><?php echo htmlspecialchars($activity['date']); ?></td>
                             <td><?php echo htmlspecialchars($activity['mileage']); ?> mi</td>
+                            <td><?php echo number_format($activity['pace'], 2); ?> min/mi</td>
                             <td>
                                 <?php 
                                     $hours = floor($activity['time'] / 3600);
