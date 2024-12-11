@@ -19,13 +19,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['add_activity'])) {
     $seconds = $_POST['seconds'];
     $notes = $_POST['notes'];
     $user_id = $_SESSION['user_id']; // Get the user ID from the session
+    $activity_date = $_POST['activity_date'];
 
     // Convert the time to total seconds
     $time = ($hours * 3600) + ($minutes * 60) + $seconds;
 
     // Insert activity into the stats table
     $sql = "INSERT INTO stats (user_id, title, mileage, time, notes, date) 
-            VALUES (:user_id, :title, :mileage, :time, :notes, NOW())";
+            VALUES (:user_id, :title, :mileage, :time, :notes, :activity_date)";
 
     if ($stmt = $pdo->prepare($sql)) {
         $stmt->bindParam(':user_id', $user_id, PDO::PARAM_INT);
@@ -33,6 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['add_activity'])) {
         $stmt->bindParam(':mileage', $mileage, PDO::PARAM_STR);
         $stmt->bindParam(':time', $time, PDO::PARAM_INT);
         $stmt->bindParam(':notes', $notes, PDO::PARAM_STR);
+        $stmt->bindParam(':activity_date', $activity_date, PDO::PARAM_STR);
 
         if ($stmt->execute()) {
             echo "Activity added successfully!";
@@ -128,11 +130,15 @@ $activities = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <input type="number" step="0.1" name="mileage" placeholder="Mileage (mi)" required><br>
 
         <!-- Time input fields for hours, minutes, and seconds -->
+        <label for="activity_date">Date:</label>
+        <input type="date" name="activity_date" value="<?php echo date('Y-m-d'); ?>" required><br>
+
         <label for="hours">Hours:</label>
         <input type="number" name="hours" min="0" max="24" placeholder="Hours" required><br>
 
         <label for="minutes">Minutes:</label>
         <input type="number" name="minutes" min="0" max="59" placeholder="Minutes" required><br>
+
         <label for="seconds">Seconds:</label>
         <input type="number" name="seconds" min="0" max="59" placeholder="Seconds" required><br>
 
