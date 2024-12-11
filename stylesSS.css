@@ -285,6 +285,9 @@ footer a:hover {
 .auth-container a:hover {
     text-decoration: underline;
 }
+
+
+
 /*Dashboard Styles*/
 .dashboard-main {
     width: 80%;
@@ -294,6 +297,7 @@ footer a:hover {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .dashboard-main h1 {
@@ -308,6 +312,7 @@ footer a:hover {
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 .stats-section h2 {
@@ -324,6 +329,7 @@ footer a:hover {
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 .add-activity-section h2 {
@@ -338,7 +344,7 @@ footer a:hover {
     padding: 10px;
     margin: 10px 0;
     font-size: 1rem;
-    border: 1px solid #ddd;
+    border: 1px solid #dddddd;
     border-radius: 4px;
 }
 
@@ -356,6 +362,7 @@ footer a:hover {
 
 .past-activities-section {
     margin-top: 3rem;
+    text-align: center;
 }
 
 .past-activities-section h2 {
@@ -384,9 +391,12 @@ footer a:hover {
 }
 
 .activities-table {
-    width: 100%;
+    width: 80%;  /* Centering the table */
+    margin: 2rem auto; /* Center the table with auto margins */
     border-collapse: collapse;
-    margin-top: 1rem;
+    border-radius: 8px;
+    overflow: hidden; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .activities-table th, .activities-table td {
