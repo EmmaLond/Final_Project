@@ -166,6 +166,7 @@ $activities = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         <th>Title</th>
                         <th>Date</th>
                         <th>Mileage</th>
+                        <th>Pace</th>
                         <th>Time</th>
                         <th>Notes</th>
                     </tr>
