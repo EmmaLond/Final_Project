@@ -99,7 +99,24 @@ $activities = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
     <section id= "recent-activity" class="stats-section">
         <h2>This Week's Stats</h2>
-        
+        <?php if ($weekly_stats['activity_count'] > 0): ?>
+        <p>Total Activities: <?php echo $weekly_stats['activity_count']; ?></p>
+        <p>Total Mileage: <?php echo round($weekly_stats['total_mileage'], 2); ?> mi</p>
+        <p>
+            Total Time: 
+            <?php 
+                $hours = floor($weekly_stats['total_time'] / 3600);
+                $minutes = floor(($weekly_stats['total_time'] % 3600) / 60);
+                $seconds = $weekly_stats['total_time'] % 60;
+                echo "{$hours}h {$minutes}m {$seconds}s";
+            ?>
+            </p>
+         <?php else: ?>
+             <p>No activities logged this week.</p>
+        <?php endif; ?>
+
+        <!-- Embed the chart -->
+        <img src="weekly_chart.php" alt="Weekly Stats Chart">
     </section>
 
     <hr>
