@@ -294,7 +294,7 @@ footer a:hover {
     max-width: 1000px;
     margin: 2rem auto;
     padding: 20px;
-    background-color: #2C2C2C;
+    background-color: #27172c;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -330,7 +330,7 @@ footer a:hover {
 
 /* Add Activity Section Widget Style */
 .add-activity-section {
-    background-color: #e87979; /* White background for the widget */
+    background-color: #ffffff; /* White background for the widget */
     padding: 20px;
     border-radius: 12px; /* Round corners */
     border:4px #8a1efd;
@@ -372,8 +372,13 @@ footer a:hover {
 
 /* Past Activities Section */
 .past-activities-section {
-    margin-top: 3rem;
-    text-align: center;
+    background-color: #ffffff; /* White background for the widget */
+    padding: 20px;
+    border-radius: 12px; /* Round corners */
+    border:4px #8a1efd;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for 3D effect */
+    text-align: center; /* Center the text */
 }
 
 .past-activities-section h2 {

@@ -99,46 +99,7 @@ $activities = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
     <section id= "recent-activity" class="stats-section">
         <h2>This Week's Stats</h2>
-        <?php if ($weekly_stats['activity_count'] > 0): ?>
-            <p>Total Activities: <?php echo $weekly_stats['activity_count']; ?></p>
-            <p>Total Mileage: <?php echo round($weekly_stats['total_mileage'], 2); ?> mi</p>
-            <p>
-                Total Time: 
-                <?php 
-                    $hours = floor($weekly_stats['total_time'] / 3600);
-                    $minutes = floor(($weekly_stats['total_time'] % 3600) / 60);
-                    $seconds = $weekly_stats['total_time'] % 60;
-                    echo "{$hours}h {$minutes}m {$seconds}s";
-                    ?>
-                </p>
-            <?php else: ?>
-                <p>No activities logged this week.</p>
-            <?php endif; ?>
-            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-            <canvas id="weeklyStatsChart" width="400" height="200"></canvas>
-            <script>
-            const ctx = document.getElementById('weeklyStatsChart').getContext('2d');
-                const chart = new Chart(ctx, {
-                    type: 'bar',
-                    data: {
-                    labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
-                    datasets: [{
-                            label: 'Mileage per day',
-                            data: [3, 5, 2, 7, 4, 6, 0], // Replace with dynamic data
-                            backgroundColor: '#ebdfff', 
-                            borderColor: '#8a1efd',
-                            borderWidth: 1
-                            }]
-                    },
-        options: {
-            scales: {
-                y: {
-                    beginAtZero: true
-                     }
-                    }
-                }
-            });
-        </script>
+        
     </section>
 
     <hr>
