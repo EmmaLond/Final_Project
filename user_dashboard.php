@@ -116,7 +116,7 @@ $activities = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <?php endif; ?>
 
         <!-- Embed the chart -->
-        <img src="weekly_chart.php" alt="Weekly Stats Chart">
+        <img src="week_chart.php" alt="Weekly Stats Chart">
     </section>
 
     <hr>

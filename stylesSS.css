@@ -328,6 +328,16 @@ footer a:hover {
     font-size: 1.1rem;
 }
 
+#recent-activity img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #2C2C2C;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
 /* Add Activity Section Widget Style */
 .add-activity-section {
     background-color: #ffffff; /* White background for the widget */
