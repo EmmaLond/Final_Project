@@ -70,7 +70,7 @@ main {
     padding: 40px;
     margin: 20px 0;
     border-radius: 10px;
-    border: 4px solid #8a1efd;
+    border: 2px solid #8a1efd;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
@@ -107,7 +107,7 @@ main {
     padding: 40px;
     margin: 20px 0;
     border-radius: 10px;
-    border: 4px solid #2C2C2C;
+    border: 2px solid #2C2C2C;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
@@ -137,7 +137,7 @@ main {
     background-color: #ebdfff; /* White background for content section */
     padding: 40px;
     margin: 20px 0;
-    border: 4px solid #8a1efd;
+    border: 2px solid #8a1efd;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -490,7 +490,7 @@ footer a:hover {
 
 /* Our Mission Section */
 .our-mission {
-    background-color: #fafafa; /* Light purple background */
+    background-color: #8a1efd; /* Light purple background */
     padding: 40px;
     border-radius: 12px;
     border: 2px solid #2C2C2C;
@@ -501,20 +501,20 @@ footer a:hover {
 
 .our-mission h2 {
     font-size: 2.4rem;
-    color: #2C2C2C;
+    color: #fffdfd;
     margin-bottom: 20px;
 }
 
 .our-mission p {
     font-size: 1.2rem;
-    color: #555;
+    color: #adadad;
 }
 
 .team{
-    background-color: #ffffff;
+    background-color: #ebdfff;
     padding: 40px;
     border-radius: 12px;
-    border: 2px solid #2C2C2C;
+    border: 2px solid #8a1efd;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     margin-bottom: 2rem;
@@ -541,4 +541,22 @@ footer a:hover {
     border: 2px solid #2C2C2C;
     text-align: center;
     width: 200px;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Round the image corners */
+}
+
+.team-member h3 {
+    font-size: 1.6rem;
+    margin-top: 15px;
+    color: #2C2C2C;
+}
+
+.team-member p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: 10px;
 }
