@@ -221,3 +221,22 @@ footer a:hover {
     margin-bottom: 20px;
     color: #2C2C2C;
 }
+
+.auth-container .error {
+    background-color: #ffcccc; /* Light red for error messages */
+    color: #CC0000; 
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.auth-form div {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.auth-form label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
