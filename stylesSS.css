@@ -403,3 +403,12 @@ footer a:hover {
 .activities-table tr:hover {
     background-color: #f7f7f7;
 }
+
+/* Table Cells for Time */
+.activities-table td {
+    font-size: 1rem;
+}
+
+.activities-table td:nth-child(3), .activities-table td:nth-child(4) {
+    font-weight: bold;
+}
