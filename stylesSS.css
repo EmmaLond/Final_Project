@@ -294,7 +294,7 @@ footer a:hover {
     max-width: 1000px;
     margin: 2rem auto;
     padding: 20px;
-    background-color: #27172c;
+    background-color: #644c80;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -432,7 +432,7 @@ footer a:hover {
 }
 
 .activities-table th {
-    background-color: #efe0f9;
+    background-color: #d0b3f1;
     color: #2C2C2C;
     font-weight: bold;
 }

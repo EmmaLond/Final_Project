@@ -15,9 +15,9 @@ $height = 400;
 
 $image = imagecreate($width, $height);
 
-$background_color = imagecolorallocate($image, 255, 255, 255);
+$background_color = imagecolorallocate($image, 245, 235, 255);
 $axis_color = imagecolorallocate($image, 0, 0, 0);          
-$bar_color = imagecolorallocate($image, 137, 31, 253);         
+$bar_color = imagecolorallocate($image, 208, 179, 241);         
 $text_color = imagecolorallocate($image, 0, 0, 0); 
 
 // Draw axes
