@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <head>
     <meta charset= "UTF-8">
     <title> Login - InStride </title>
-    <link rel = "stylesheet" href= "stylesS.css">
+    <link rel = "stylesheet" href= "stylesSS.css">
 </head>
 <body>
     <div class= "auth-container">

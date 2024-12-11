@@ -84,7 +84,7 @@ $activities = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Dashboard</title>
-    <link rel="stylesheet" href="stylesS.css">
+    <link rel="stylesheet" href="stylesSS.css">
 </head>
 <body>
     <header>
@@ -125,8 +125,8 @@ $activities = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     datasets: [{
                             label: 'Mileage per day',
                             data: [3, 5, 2, 7, 4, 6, 0], // Replace with dynamic data
-                            backgroundColor: 'rgba(255, 126, 95, 0.8)',
-                            borderColor: 'rgba(255, 126, 95, 1)',
+                            backgroundColor: '#ebdfff', 
+                            borderColor: '#8a1efd',
                             borderWidth: 1
                             }]
                     },
