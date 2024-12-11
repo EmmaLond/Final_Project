@@ -15,4 +15,7 @@ $height = 400;
 
 $image = imagecreate($width, $height);
 
-$backgroun_color = imagecolorallocate($image, 255, 255, 255);
+$background_color = imagecolorallocate($image, 255, 255, 255);
+$axis_color = imagecolorallocate($image, 0, 0, 0);          
+$bar_color = imagecolorallocate($image, 137, 31, 253);         
+$text_color = imagecolorallocate($image, 0, 0, 0); 
