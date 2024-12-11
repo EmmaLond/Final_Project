@@ -306,17 +306,20 @@ footer a:hover {
     color: #2C2C2C;
 }
 
-/* Stats Section */
+/* Stats Section Widget Style */
 .stats-section {
-    background-color: #ebdfff;
+    background-color: #ffffff; /* White background for the widget */
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 12px; /* Round corners for a card-like effect */
     margin-bottom: 2rem;
-    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center; /* Center the text */
 }
 
 .stats-section h2 {
     color: #2C2C2C;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
 }
 
 .stats-section p {
@@ -324,28 +327,32 @@ footer a:hover {
     font-size: 1.1rem;
 }
 
+/* Add Activity Section Widget Style */
 .add-activity-section {
-    background-color: #ebdfff;
+    background-color: #ffffff; /* White background for the widget */
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 12px; /* Round corners */
     margin-bottom: 2rem;
-    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for 3D effect */
+    text-align: center; /* Center the text */
 }
 
 .add-activity-section h2 {
     color: #2C2C2C;
     margin-bottom: 1rem;
+    font-size: 1.5rem;
 }
 
+/* Add Activity Form Inputs */
 .add-activity-form input, 
 .add-activity-form textarea, 
 .add-activity-form button {
-    width: 100%;
+    width: 80%;
     padding: 10px;
     margin: 10px 0;
     font-size: 1rem;
     border: 1px solid #dddddd;
-    border-radius: 4px;
+    border-radius: 6px; /* Slightly rounded edges */
 }
 
 .add-activity-form textarea {
@@ -358,8 +365,10 @@ footer a:hover {
     color: white;
     cursor: pointer;
     font-weight: bold;
+    border-radius: 6px; /* Rounded button */
 }
 
+/* Past Activities Section */
 .past-activities-section {
     margin-top: 3rem;
     text-align: center;
