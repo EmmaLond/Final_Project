@@ -75,7 +75,7 @@ if (!isset($_SESSION['user_id'])) {
         
     </main>
     <footer>
-        <p>Contact me at: <a href="mailto:someone@example.com">someone@example.com</a></p>
+        <p>Contact us at: <a href="InStride@example.com">InStride@example.com</a></p>
     </footer>
 </body>
 </html>
