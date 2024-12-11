@@ -311,6 +311,7 @@ footer a:hover {
     background-color: #ffffff; /* White background for the widget */
     padding: 20px;
     border-radius: 12px; /* Round corners for a card-like effect */
+    border: 4px #8a1efd;
     margin-bottom: 2rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     text-align: center; /* Center the text */
@@ -332,6 +333,7 @@ footer a:hover {
     background-color: #ffffff; /* White background for the widget */
     padding: 20px;
     border-radius: 12px; /* Round corners */
+    border:4px #8a1efd;
     margin-bottom: 2rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for 3D effect */
     text-align: center; /* Center the text */
@@ -349,7 +351,7 @@ footer a:hover {
 .add-activity-form button {
     width: 80%;
     padding: 10px;
-    margin: 10px 0;
+    margin: 10px 10px;
     font-size: 1rem;
     border: 1px solid #dddddd;
     border-radius: 6px; /* Slightly rounded edges */
@@ -415,7 +417,7 @@ footer a:hover {
 }
 
 .activities-table th {
-    background-color: #f0f8ff;
+    background-color: #efe0f9;
     color: #2C2C2C;
     font-weight: bold;
 }

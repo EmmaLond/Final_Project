@@ -84,7 +84,7 @@ $activities = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Dashboard</title>
-    <link rel="stylesheet" href="stylesSS.css">
+    <link rel="stylesheet" href="stylesS.css">
 </head>
 <body>
     <header>
@@ -162,7 +162,7 @@ $activities = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         <tr>
                             <td><?php echo htmlspecialchars($activity['title']); ?></td>
                             <td><?php echo htmlspecialchars($activity['date']); ?></td>
-                            <td><?php echo htmlspecialchars($activity['mileage']); ?> km</td>
+                            <td><?php echo htmlspecialchars($activity['mileage']); ?> mi</td>
                             <td>
                                 <?php 
                                     $hours = floor($activity['time'] / 3600);

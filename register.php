@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <head>
     <meta charset="UTF-8">
     <title>Register - InStride</title>
-    <link rel="stylesheet" href="stylesSS.css">
+    <link rel="stylesheet" href="stylesS.css">
 </head>
 <body>
     <div class="auth-container">
