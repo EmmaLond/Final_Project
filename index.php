@@ -36,7 +36,7 @@ if (!isset($_SESSION['user_id'])) {
             <div class="section-content">
                 <h2>About Us</h2>
                 <p>We offer a refreshing approach to running. No comparisons, just progress</p>
-            <button class="cta-btn">Learn More</button>
+                <a href="about.html" class="cta-btn">Learn More</a>
         </div>
         </section>
 
