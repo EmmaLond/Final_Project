@@ -147,7 +147,7 @@ $activities = $stmt->fetchAll(PDO::FETCH_ASSOC);
     </form>
 
 <?php if (count($activities) > 0): ?>
-    <table>
+    <table class="activities-table">
         <thead>
             <tr>
                         <th>Title</th>
