@@ -469,7 +469,13 @@ footer a:hover {
 
 /*About Styles*/
 .about-intro{
-
+    background-color: #ffffff; /* White background */
+    padding: 40px;
+    border-radius: 12px; /* Round corners for card-like effect */
+    border: 4px #8a1efd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
 .our-mission{
@@ -481,5 +487,5 @@ footer a:hover {
 }
 
 .team-member{
-    
+
 }
