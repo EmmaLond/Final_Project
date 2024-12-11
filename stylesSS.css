@@ -353,3 +353,32 @@ footer a:hover {
     cursor: pointer;
     font-weight: bold;
 }
+
+.past-activities-section {
+    margin-top: 3rem;
+}
+
+.past-activities-section h2 {
+    color: #2d87f0;
+    margin-bottom: 1rem;
+}
+
+.search-form input {
+    width: 80%;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+.search-form button {
+    padding: 10px;
+    background-color: #2d87f0;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #1a6db3;
+}
