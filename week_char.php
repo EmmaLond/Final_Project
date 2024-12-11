@@ -9,3 +9,10 @@ if (!isset($_SESSION['user_id'])) {
 }
 
 header("Content-Type: image/png");
+
+$width = 700;
+$height = 400;
+
+$image = imagecreate($width, $height);
+
+$backgroun_color = imagecolorallocate($image, 255, 255, 255);
