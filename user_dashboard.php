@@ -84,13 +84,13 @@ $activities = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Dashboard</title>
-    <link rel="stylesheet" href="stylesF.css">
+    <link rel="stylesheet" href="stylesSS.css">
 </head>
 <body>
     <header>
         <nav>
             <a href="index.php">Home</a> | 
-            <a href="user_dashboard.php">My Dashboard</a> | 
+            <a href="about.html">About</a> | 
             <a href="login.php">Logout</a>
         </nav>
     </header>
@@ -98,7 +98,7 @@ $activities = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <main>
     <h1>Welcome to Your Dashboard</h1>
 
-    <section id= "recent-activity">
+    <section id= "recent-activity" class="stats-section">
         <h2>This Week's Stats</h2>
         <?php if ($weekly_stats['activity_count'] > 0): ?>
             <p>Total Activities: <?php echo $weekly_stats['activity_count']; ?></p>
@@ -117,18 +117,9 @@ $activities = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <?php endif; ?>
     </section>
 
-
-
-
-
-
-    <form method="POST" action="user_dashboard.php">
-        <input type="text" name="search_title" placeholder="Search by activity title"  value="<?php echo htmlspecialchars($search_title); ?>">
-        <button type="submit" name="search">Search</button>
-    </form>
-
     <hr>
-
+    
+    <section class="add-activity-section">
     <h2>Add New Activity</h2>
     <form method="POST" action="user_dashboard.php">
         <input type="text" name="title" placeholder="Activity Title" required><br>
@@ -145,11 +136,17 @@ $activities = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
         <textarea name="notes" placeholder="Notes" ></textarea><br>
         <button type="submit" name="add_activity">Add Activity</button>
-</form>
-
-<hr>
-
+        </form>
+            </section>
+    <hr>
+<section class ="past-activities-section">
 <h2>Past Activities</h2>
+
+<form method="POST" action="user_dashboard.php">
+        <input type="text" name="search_title" placeholder="Search by activity title"  value="<?php echo htmlspecialchars($search_title); ?>">
+        <button type="submit" name="search">Search</button>
+    </form>
+
 <?php if (count($activities) > 0): ?>
     <table>
         <thead>
@@ -183,7 +180,7 @@ $activities = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <?php else: ?>
             <p>No activities found.</p>
         <?php endif; ?>
-
+        </section>
 </main>
 </body>
 </html>
