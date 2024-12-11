@@ -204,3 +204,20 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+/*Login Page Styles*/
+.auth-container {
+    max-width: 400px;
+    margin: 80px auto; /* Center the container vertically and horizontally */
+    background-color: #ffffff; /* White background for the form */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.auth-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2C2C2C;
+}
